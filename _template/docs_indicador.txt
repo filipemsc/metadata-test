@@ -1,23 +1,13 @@
-# Indicador
-Taxa de cobertura previdenciária dos ocupados de 16 a 64 anos
-
 # Conceituação
-Proporção de ocupados contribuintes da previdência, em qualquer regime
 
 # Interpretação
-Quanto maior a taxa, maior é a proporção de trabalhadores que recolhem contribuição para a previdência.
 
 # Usos
-Avaliar o grau de formalidade da população em idade ativa ocupada.
 
 # Limitações
-A PNADC não permite captar contribuções facultativas. A informação está baseada na “semana de referência” em que foi realizada a pesquisa, refletindo apenas a renda informada em um período específico. Trata-se de pesquisa amostral, então o indicador pode não ter significância estatística em certas desagregações.
 
 # Fontes
-PNADC/IBGE
 
 # Método de cálculo
-$$ indicador = \frac{\text{nº de ocupados contribuintes de 16 a 64 anos}}{\text{nº de ocupados de 16 a 64 anos}} \times 100 $$
 
 # Notas/Observações
-Não há.
