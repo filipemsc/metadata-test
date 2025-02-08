@@ -1,0 +1,7 @@
+---
+title: Catálogo
+listing:
+    - contents: inds/
+      type: table
+      fields: [title]
+---

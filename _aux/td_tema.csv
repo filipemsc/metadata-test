@@ -1,0 +1,45 @@
+pk,no_tema,no_subtema,co_tema,co_subtema,co_area,no_area
+NA_0_0,--,--,0,0,,
+1_1_1,Saúde Sexual e Reprodutiva,Métodos contraceptivos,1,1,1,Saúde
+1_2_1,Saúde Materna e da Criança,Pré-natal,2,1,1,Saúde
+1_2_2,Saúde Materna e da Criança,Parto,2,2,1,Saúde
+1_2_3,Saúde Materna e da Criança,Saúde da criança com menos de 2 anos,2,3,1,Saúde
+1_3_1,Imunização,Crianças,3,1,1,Saúde
+1_3_2,Imunização,Grupos prioritários,3,2,1,Saúde
+1_3_3,Imunização,População geral,3,3,1,Saúde
+1_4_1,Atendimento em saúde,Atendimento relacionado à própria saúde,4,1,1,Saúde
+1_4_2,Atendimento em saúde,Consultas médicas,4,2,1,Saúde
+1_4_3,Atendimento em saúde,Consultas odontológicas,4,3,1,Saúde
+1_4_4,Atendimento em saúde,Procedimentos diagnósticos,4,4,1,Saúde
+1_4_5,Atendimento em saúde,Internações,4,5,1,Saúde
+1_4_6,Atendimento em saúde,Atendimento de urgência ou emergência no domicílio,4,6,1,Saúde
+1_4_7,Atendimento em saúde,Atendimento móvel de urgência ou emergência,4,7,1,Saúde
+1_4_8,Atendimento em saúde,Acesso a medicamentos,4,8,1,Saúde
+1_4_9,Atendimento em saúde,Cirurgias,4,9,1,Saúde
+1_4_10,Atendimento em saúde,Atendimento a vítima de trânsito,4,10,1,Saúde
+1_4_11,Atendimento em saúde,Profissionais de saúde,4,11,1,Saúde
+2_1_1,Escala,Benefícios,1,1,2,Previdência
+2_1_2,Escala,Contribuintes,1,2,2,Previdência
+2_2_1,Cobertura,Proteção previdenciária,2,1,2,Previdência
+2_2_2,Cobertura,Proteção social,2,2,2,Previdência
+2_3_1,Adequação dos benefícios,Valor,3,1,2,Previdência
+2_3_2,Adequação dos benefícios,Reposição do rendimento,3,2,2,Previdência
+2_4_1,Pobreza,Pobreza estimada,4,1,2,Previdência
+2_4_2,Pobreza,Pobreza simulada sem benefícios,4,2,2,Previdência
+2_5_1,Desigualdade,Incidência,5,1,2,Previdência
+2_5_2,Desigualdade,Decomposição do Gini,5,2,2,Previdência
+2_6_1,Sustentabilidade,Demográfica,6,1,2,Previdência
+2_6_2,Sustentabilidade,Contributiva,6,2,2,Previdência
+2_7_1,"Receitas, despesas e resultado previdenciário",Despesas com benefícios,7,1,2,Previdência
+2_7_2,"Receitas, despesas e resultado previdenciário",Arrecadação líquida,7,2,2,Previdência
+2_7_3,"Receitas, despesas e resultado previdenciário",Resultado financeiro,7,3,2,Previdência
+3_1_1,Estrutura do Sistema Único de Assistência Social,Unidades Públicas,1,1,3,Assistência social
+3_1_2,Estrutura do Sistema Único de Assistência Social,Unidades Privadas,1,2,3,Assistência social
+3_2_1,Orçamento da Assistência Social,Orçamento federal para os serviços socioassistenciais do SUAS,2,1,3,Assistência social
+3_2_2,Orçamento da Assistência Social,Orçamento federal para os benefícios socioassistenciais,2,2,3,Assistência social
+3_3_1,Oferta de benefícios socioassistenciais,Programa Bolsa Família,3,1,3,Assistência social
+3_3_2,Oferta de benefícios socioassistenciais,Benefício de Prestação Continuada,3,2,3,Assistência social
+3_3_3,Oferta de benefícios socioassistenciais,Benefícios eventuais,3,3,3,Assistência social
+3_4_1,Oferta de serviços socioassistenciais,Proteção Social Básica,4,1,3,Assistência social
+3_4_2,Oferta de serviços socioassistenciais,Proteção Social Especial de Média Complexidade,4,2,3,Assistência social
+3_4_3,Oferta de serviços socioassistenciais,Proteção Social Especial de Alta Complexidade,4,3,3,Assistência social
