@@ -4,4 +4,6 @@ listing:
     - contents: inds/
       type: table
       fields: [title]
+      field-display-names: 
+        title: Indicadores
 ---
