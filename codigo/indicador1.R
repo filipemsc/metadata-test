@@ -24,7 +24,7 @@ cria_serie(
 
 cria_serie(
   dados = indicador2_1_1_cat,
-  2,2,1,1,
+  2,2,1,2,
   "categoria"
 )
 

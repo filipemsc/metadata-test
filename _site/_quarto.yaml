@@ -4,9 +4,20 @@ project:
 
 website:
   title: "Portal de Indicadores"
+  bread-crumbs: true
   navbar:
     background: "#F8F9F9"
     search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://code.com
+          - text: Report a Bug
+            href:  https://bugs.com
 
 format:
   html:

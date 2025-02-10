@@ -13,6 +13,7 @@ cria_indicador <- function(co_area, co_tema, co_subtema, co_indicador, abbrev_in
   td_tema <- data.table::fread("_aux/td_tema.csv")
   categ <- collapse::fsubset(td_tema, pk == pk_value)
 
+  co_area <- as.integer(co_area)
   co_tema <- as.integer(co_tema)
   co_subtema <- as.integer(co_subtema)
   co_indicador <- as.integer(co_indicador)
@@ -105,18 +106,38 @@ cria_serie <- function(dados, co_area, co_tema, co_subtema, co_indicador, serie)
   data.table::fwrite(dados, file_csv)
 
   if(!file_csv %in% metadados$arquivos) metadados$arquivos <- append(metadados$arquivos, file_csv)
+  metadados$atualizado_em <- as.character(format(Sys.time(), "%Y-%m-%d %H:%M:%S"))
   yaml::write_yaml(metadados, file_metadados)
 }
 
 publish <- function(num_indicador){
 
+
   file_metadados <- fs::dir_ls(path = "metadados", regexp = paste0(num_indicador, "_ind_.*"))
   metadados <- yaml::read_yaml(file_metadados)
+  criado_por <- metadados$criado_por$nome
+  criado_em <- metadados$criado_em
+  series_disponiveis <- paste(metadados$series, collapse = ", ")
+  atualizado_por <- metadados$atualizado_por$nome
+  atualizado_em <- metadados$atualizado_em
 
-  page_old <-  metadados$documentacao
-  page_new <- paste0("_site/inds/", fs::path_file(page_old))
-  fs::file_copy(page_old, page_new, overwrite = TRUE)
+  docs <-  readChar(metadados$documentacao, file.info(metadados$documentacao)$size)[1] 
+  foot <- glue::glue("### Metadados
+  **Publicado por**: {criado_por}\n
+  **Criado em:** {criado_em}\n
 
-  quarto::quarto_render(page_new)
+  **Atualizado por**: {atualizado_por}\n
+  **Atualizado em**: {atualizado_em}
+
+  **Séries disponíveis**: {series_disponiveis}
+  ")
+  
+  page <- paste0(docs, "\n", foot)
+
+  page_path <- paste0("_site/inds/", fs::path_file(metadados$documentacao))
+
+  writeLines(page, page_path)
+
+  quarto::quarto_render(page_path)
 }
 
