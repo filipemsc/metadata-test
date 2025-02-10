@@ -1,5 +1,10 @@
 source("R/functions.R")
 
+fs::dir_create('metadados/')
+fs::dir_create('docs/')
+fs::dir_create('indicadores/')
+fs::dir_create('_site/inds')
+
 indicador2_1_1_cat  <- readxl::read_xlsx('dados/2.1.1-Tx-Cobertura-Prev-Ocupados.xlsx', sheet = "serie_1") |>
   dplyr::rename(ano = vl_periodo)
 

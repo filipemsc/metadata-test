@@ -139,5 +139,6 @@ publish <- function(num_indicador){
   writeLines(page, page_path)
 
   quarto::quarto_render(page_path)
+  quarto::quarto_render("_site/index.qmd")
 }
 
